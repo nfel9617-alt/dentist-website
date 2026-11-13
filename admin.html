@@ -23,7 +23,7 @@ table{width:100%;border-collapse:collapse;font-size:.88rem}th,td{text-align:left
 <form id="login" onsubmit="login(event)"><h2>Admin login</h2><input type="password" id="pw" placeholder="Password" required><button class="btn">Sign in</button><small id="err" style="color:#c00"></small></form>
 <div id="app"><aside id="nav"><h1>Clinic admin</h1></aside><main><h2 id="title"></h2><div id="view"></div></main></div>
 <script>
-const API_URL=""; // same Apps Script URL as index.html
+const API_URL="https://script.google.com/macros/s/AKfycbzJnS4QDkZkX1L5BmIbz9waNwa167DehvjSajCX2IWZrBCs7D6W_86VjC3uBa0dyYN9/exec"; // same Apps Script URL as index.html
 const TABS={dashboard:"Dashboard",appointments:"Appointments",patients:"Patients",services:"Dental services",results:"Results",testimonials:"Testimonials",about:"About information"};
 const $=id=>document.getElementById(id),esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 let pass="";
